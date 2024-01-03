@@ -4,291 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>St, dominic's Academy</title>
+    <title>St, Dominic's Academy</title>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Bagel+Fat+One">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Russo+One">
     <style>
         body {
             font-family: "Bagel_Fat_One variant0", Tofu;
-
-            margin: 0px;
-            padding: 0px;
-
+            margin: 0;
+            padding: 0;
         }
-
+    
         .header {
             background-image: url("https://www.shutterstock.com/image-vector/horizontal-background-geometric-patternvector-website-260nw-1495416785.jpg");
             opacity: 5.8;
-            /* border: 2px solid green; */
             height: 200px;
-
-
-
-            /* display: flex; */
-            /* flex-direction: column; */
         }
-
+    
         .image {
-            padding-left: 50px;
-            height: 121px;
-            width: 155px;
-            margin-top: 18px;
-            opacity: 1;
             padding-left: 15px;
             height: 143px;
             width: 161px;
-
+            margin-top: 18px;
+            opacity: 1;
         }
-
+    
         .heading {
             color: white;
             text-align: center;
-            padding-left: 130px;
             font-family: "Bagel_Fat_One variant0", Tofu;
-            align-items: center;
-            justify-content: center;
             margin-top: -36px;
             font-size: 61px;
-            opacity: 1;
             text-shadow: 2px 2px #ff0000;
-            /* animation-name: anjali1;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: forwards; */
-
-
-
         }
-/* @keyframes anjlai1{
-    from{
-        180px;
-    }
-    to{
-        900px;
-    }
-} */
-
-
-
-
-
-
-
-
-
+    
         .navbar {
             background-color: #762e2e;
-            /* color: blue; */
-            margin-top: 0px;
-
-
+            margin-top: 0;
+            overflow: hidden;
         }
-
-
-
-
-
+    
         .navbar li {
             font-family: monospace;
             display: inline-block;
-
         }
-
-        li {
-            list-style: none;
-        }
-
-
-
-
+    
         .navbar li a {
             text-decoration: none;
-            display: inline-block;
-            padding: 13px 13px;
+            display: block;
+            padding: 13px;
             font-size: 18px;
             color: white;
             font-family: monospace;
-            list-style: none;
         }
-
+    
         .navbar li a:hover,
         .navbar li a.active {
-            /* text-decoration: underline; */
             color: rgb(221, 21, 138);
             text-decoration: none;
-            /* background-color: skyblue ; */
         }
+    
+        @media only screen and (max-width: 600px) {
+            /* Responsive styles for small screens */
+    
+            .navbar li {
+                display: block;
+                text-align: center;
+            }
+    
+            .navbar li a {
+                padding: 10px;
+            }
+    
+            .image {
+                padding-left: 0;
+                margin-top: 10px;
+            }
+    
+            .heading {
+               color: white;
+              text-align: center;
+               padding-left: 10px; /* Adjust as needed for spacing */
+               padding-right: 10px; /* Adjust as needed for spacing */
+               font-family: "Bagel_Fat_One variant0", Tofu;
+                 margin-top: -36px;
+                font-size: 30px; /* Adjust the font size for smaller screens */
+               text-shadow: 2px 2px #ff0000;
+}
 
+@media only screen and (min-width: 600px) {
+    /* Adjust the font size for larger screens */
+    .heading {
+        font-size: 61px;
+    }
+}
+    
+            .container {
+                margin: 10px;
+            }
+    
+            .box {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    
         .image12 {
-            margin: 0px;
+            margin: 0;
             height: 50%;
             width: 100%;
-            /* opacity: ; */
             z-index: -1;
         }
-
+    
         .footer {
             background-color: #762e2e;
-            margin: 0px;
+            margin: 0;
             height: 48px;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 23px;
         }
-
+    
         .footer a {
             padding: 24px 17px;
             color: white;
             text-decoration: none;
         }
-
+    
         .footer a:hover {
             cursor: pointer;
             color: rgb(216, 8, 8);
-
         }
-
+    
         .headline {
             text-align: center;
             color: rgb(71, 4, 38);
             margin-left: 45px;
             font-size: 54px;
-            /* text-decoration: none; */
             text-shadow: 2px 2px yellow;
         }
-
-        /* iframe {
-    height: 25vh;
-    padding-left: 34px;
-   } */
+    
         .images {
             padding: 24px;
             border: 2px solid black;
-            /* height: 34px;
-    width: 34px;
-   */
             background-color: #d9cab4;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
-
+    
+        .images img {
+            margin-bottom: 16px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+    
         .h3 {
             text-align: center;
             color: rgb(6 6 193);
             font-size: 45px;
-            /* text-decoration: none; */
             text-shadow: 2px 2px #efff00;
         }
-
+    
         .container {
             display: flex;
-            margin: 23px 290px;
+            flex-wrap: wrap;
+            margin: 23px;
         }
-
+    
         .box {
-            width: 500px;
-            height: 219px;
+            width: calc(50% - 20px);
+            margin: 10px;
             background-color: rgb(209, 233, 218);
             border: 2px solid #0a1e83;
-            margin: 2px 9px;
             display: flex;
-            flex-direction: row;
-
-        }
-
-        #box1 {
-            background-image: url("https://static-cse.canva.com/blob/558884/lightandshadow.c99f8456.jpg");
-            font-family: "Russo_One variant0", Tofu;
-
-            /* text-decoration: none; */
-            color: black;
-            font-size: 21px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            font-style: bold;
-        }
-
-        #box2 {
-            background-image: url("https://static-cse.canva.com/blob/558884/lightandshadow.c99f8456.jpg");
-            font-family: "Russo_One variant0", Tofu;
-
-            /* text-decoration: none; */
-            color: black;
-            font-size: 17px;
-            display: flex;
-            justify-content: center;
             align-items: center;
-            flex-direction: column;
-            font-style: bold;
-            /* font-family: Georgia, 'Times New Roman', Times, serif; */
-
+            padding: 10px;
         }
-
-        .li {
-            color: black;
-            font-size: 12px;
-            /* text-decoration: none; */
-            justify-content: center;
-            align-items: center;
-
-
-        }
-
-        h5 {
-            font-size: 45px;
-            color: rgb(236, 18, 18);
-            text-align: center;
-            /* text-decoration: none; */
-            text-shadow: 2px 2px #efff00;
-
-
-        }
-
-        /* .text{
-    font-size: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-
-} */
-        .image12::before {
-            content: "Welcome TO Our Website";
-            color: black;
-
-        }
-
-        #text {
-            /* text-decoration: none; */
-            color: black;
-            font-size: 24px;
-            padding-left: 24px;
-            /* border: 2px solid blueviolet; */
-
-        }
-
-        #h4 {
-            /* text-align: center; */
-            font-size: 30px;
-            color: #0a1e83;
-            /* text-shadow: 2px 2px yellow; */
-            padding-left: 25px;
-        }
-
-        #ul {
-            /* text-align: center; */
-            /* text-decoration: none; */
-            font-size: 20px;
-            list-style-type: square;
-            padding-left: 25px;
-            color: black;
-            font-style: bold;
-        }
-
-        #section0 {
-            background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200801/pngtree-spotlight-background-with-grey-and-white-colors-can-be-used-for-image_376614.jpg");
-
-        }
+    
+        /* Add the rest of your styles below this line */
     </style>
+    
 </head>
 
 <body>
@@ -296,10 +194,8 @@
         <img class="image"
             src="https://www.joonsquare.com/usermanage/image/business/st-dominic-s-academy-firozabad-4067/st-dominic-s-academy-firozabad-logo.png"
             alt="image not available">
-        <h2 class="heading">ST,DOMINIC'S ACADEMY</h2>
-
+        <h2 class="heading">ST, DOMINIC'S ACADEMY</h2>
     </header>
-
 
     <nav>
         <ul class="navbar">
@@ -312,89 +208,90 @@
             <li><a href="#">Info</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Contact Us</a></li>
-
         </ul>
-    </nav>
-    <section>
 
+    </nav>
+
+    <!-- Add the rest of your HTML content below this line -->
+
+    <section>
         <img class="image12" src="https://stdominicsacademy.edu.in/images/upload/SchoolImage1.jpg"
             alt="image not available">
-
-
     </section>
-    <section>
-        <h3 class="h3">
-            Why It Is Best School In Shikohabad?
-        </h3>
 
-
-        <div class="container">
-            <div class="box" id="box1"> Facilities Available
-                <ul>
-                    <li>Best Eduation</li>
-                    <li>Best Faculties</li>
-                    <li>Sports Oppurtunities</li>
-                    <li>All Labs available</li>
-                    <li>Full Security of Students</li>
-                    <li>Best Transport Facilities</li>
-                </ul>
-            </div>
-            <div class="box" id="box2">Subjects Available for class 11 & 12
-                <ul>
-                    <li>Maths </li>
-                    <li>Physics</li>
-                    <li>Chemistry</li>
-                    <li>Biology</li>
-                    <li>Computer Science</li>
-                    <li>Hindi</li>
-                    <li>Commerce</li>
-                    <li>Commerce with Maths</li>
-
-                </ul>
-
-            </div>
-
-
-    </section>
-    <section>
-        <h5> More About This Institute </h5>
-        <p id="text">
-            St. Dominics Academy, Shikohabad is a Catholic, Christian, Minority Educational Institution imparting
-            education to students irrespective of their sex, caste, creed, religion or social status to strengthen inter
-            religious, inter communal and inter-cultural tie among the students so that they learn to respect all
-            religions and cultures in our country and strive to achieve 'Unity in Diversity' as part of God's plan for
-            humanity. It is an English medium co-educational school, according to the syllabus of Central Board of
-            Secondary Education, Delhi and is being run by St. Thomas Educational and Medical society, Etawah
-            (Registered)
-        </p>
-    </section>
-    <h3 class="headline">
-        Some Beautiful Moments
+    <!-- Add more sections and content as needed -->
+    <h3 class="h3">
+        Why It Is Best School In Shikohabad?
     </h3>
-    <section class="images">
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHhiiIYTbB8JMkZ3wddtYEzpwBpS1RoMoBg&usqp=CAU"
-            height="170px" width="250px">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszRdX-Q7T2-OM7ApUzlMoeSOtSlBIJgqqAg&usqp=CAU"
-            height="170px" width="250px">
-        <img src="https://bingo.icbse.com/business.jpg?action=contactcard&id=qgdrek" height="170px" width="250px">
-        <img src="https://stdominicsacademy.edu.in/images/Activity/Annual_day_2022/DSC_7457.JPG" height="170px"
-            width="250px">
-        <img src="https://stdominicsacademy.edu.in/images/Activity/Annual_day_2022/DSC_7281.JPG" height="170px"
-            width="220px">
-    </section>
-    <section id="section0">
-        <h4 id="h4">Useful Links</h4>
-        <ul id="ul">
-            <li>About us
-            </li>
-            <li>Classes</li>
-            <li>News</li>
-            <li>Teacher & Staff</li>
-            <li>Contact Us</li>
-            <li>Privacy policy</li>
-        </ul>
-    </section>
+
+    <div class="container">
+        <div class="box" id="box1"> Facilities Available
+            <ul>
+                <li>Best Eduation</li>
+                <li>Best Faculties</li>
+                <li>Sports Oppurtunities</li>
+                <li>All Labs available</li>
+                <li>Full Security of Students</li>
+                <li>Best Transport Facilities</li>
+            </ul>
+        </div>
+        <div class="box" id="box2">Subjects Available for class 11 & 12
+            <ul>
+                <li>Maths </li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>Computer Science</li>
+                <li>Hindi</li>
+                <li>Commerce</li>
+                <li>Commerce with Maths</li>
+
+            </ul>
+
+        </div>
+
+
+</section>
+<section>
+    <h5> More About This Institute </h5>
+    <p id="text">
+        St. Dominics Academy, Shikohabad is a Catholic, Christian, Minority Educational Institution imparting
+        education to students irrespective of their sex, caste, creed, religion or social status to strengthen inter
+        religious, inter communal and inter-cultural tie among the students so that they learn to respect all
+        religions and cultures in our country and strive to achieve 'Unity in Diversity' as part of God's plan for
+        humanity. It is an English medium co-educational school, according to the syllabus of Central Board of
+        Secondary Education, Delhi and is being run by St. Thomas Educational and Medical society, Etawah
+        (Registered)
+    </p>
+</section>
+<h3 class="headline">
+    Some Beautiful Moments
+</h3>
+<section class="images">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROHhiiIYTbB8JMkZ3wddtYEzpwBpS1RoMoBg&usqp=CAU"
+        height="170px" width="250px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszRdX-Q7T2-OM7ApUzlMoeSOtSlBIJgqqAg&usqp=CAU"
+        height="170px" width="250px">
+    <img src="https://bingo.icbse.com/business.jpg?action=contactcard&id=qgdrek" height="170px" width="250px">
+    <img src="https://stdominicsacademy.edu.in/images/Activity/Annual_day_2022/DSC_7457.JPG" height="170px"
+        width="250px">
+    <img src="https://stdominicsacademy.edu.in/images/Activity/Annual_day_2022/DSC_7281.JPG" height="170px"
+        width="220px">
+</section>
+<section id="section0">
+    <h4 id="h4">Useful Links</h4>
+    <ul id="ul">
+        <li>About us
+        </li>
+        <li>Classes</li>
+        <li>News</li>
+        <li>Teacher & Staff</li>
+        <li>Contact Us</li>
+        <li>Privacy policy</li>
+    </ul>
+</section>
 
 
     <footer class="footer">
@@ -402,8 +299,6 @@
         <a href="#">Contact Us</a>
         <a href="#">Copyright&#169;2023</a>
     </footer>
-
-
 </body>
 
 </html>
